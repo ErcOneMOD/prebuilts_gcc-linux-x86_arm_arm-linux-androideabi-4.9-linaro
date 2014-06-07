@@ -6,8 +6,7 @@ START-INFO-DIR-ENTRY
 * Annotate: (annotate).                 The obsolete annotation interface.
 END-INFO-DIR-ENTRY
 
-   Copyright (C) 1994-1995, 2000-2001, 2003-2005, 2007-2012 Free
-Software Foundation, Inc.
+   Copyright (C) 1994-2014 Free Software Foundation, Inc.
 
    Permission is granted to copy, distribute and/or modify this document
 under the terms of the GNU Free Documentation License, Version 1.3 or
@@ -18,8 +17,7 @@ Free Documentation License".
 
    This file documents GDB's obsolete annotations.
 
-   Copyright (C) 1994-1995, 2000-2001, 2003-2005, 2007-2012 Free
-Software Foundation, Inc.
+   Copyright (C) 1994-2014 Free Software Foundation, Inc.
 
    Permission is granted to copy, distribute and/or modify this document
 under the terms of the GNU Free Documentation License, Version 1.3 or
@@ -1172,21 +1170,21 @@ permit their use in free software.
 
 
 Tag Table:
-Node: Top1349
-Node: Annotations Overview2519
-Node: Limitations4318
-Node: Migrating to GDB/MI6903
-Node: Server Prefix7286
-Node: Value Annotations7932
-Node: Frame Annotations11102
-Node: Displays15001
-Node: Prompting16032
-Node: Errors17535
-Node: Breakpoint Info18425
-Node: Invalidation19650
-Node: Annotations for Running20129
-Node: Source Annotations21642
-Node: Multi-threaded Apps22588
-Node: GNU Free Documentation License23197
+Node: Top1283
+Node: Annotations Overview2453
+Node: Limitations4252
+Node: Migrating to GDB/MI6837
+Node: Server Prefix7220
+Node: Value Annotations7866
+Node: Frame Annotations11036
+Node: Displays14935
+Node: Prompting15966
+Node: Errors17469
+Node: Breakpoint Info18359
+Node: Invalidation19584
+Node: Annotations for Running20063
+Node: Source Annotations21576
+Node: Multi-threaded Apps22522
+Node: GNU Free Documentation License23131
 
 End Tag Table
