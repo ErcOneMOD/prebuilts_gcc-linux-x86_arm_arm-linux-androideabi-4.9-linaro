@@ -1,5 +1,5 @@
 This is libgomp.info, produced by makeinfo version 4.13 from
-/mnt/jenkins/workspace/linaro-android_toolchain-4.9-linaro-git/build/objdir/../build/../gcc/gcc-linaro-4.9-branch/libgomp/libgomp.texi.
+/mnt/jenkins/workspace/linaro-android_toolchain-4.9-2014.06/build/objdir/../build/../gcc/gcc-linaro-4.9-2014.06/libgomp/libgomp.texi.
 
 Copyright (C) 2006-2014 Free Software Foundation, Inc.
 
@@ -109,10 +109,10 @@ The runtime routines described here are defined by Section 3 of the
 OpenMP specification in version 4.0.  The routines are structured in
 following three parts:
 
-   Control threads, processors and the parallel environment.  They have
-C linkage, and do not throw exceptions.
-
 * Menu:
+
+Control threads, processors and the parallel environment.  They have C
+linkage, and do not throw exceptions.
 
 * omp_get_active_level::        Number of active parallel regions
 * omp_get_ancestor_thread_num:: Ancestor thread ID
@@ -143,9 +143,7 @@ C linkage, and do not throw exceptions.
 * omp_set_num_threads::         Set upper team size limit
 * omp_set_schedule::            Set the runtime scheduling method
 
-   Initialize, set, test, unset and destroy simple and nested locks.
-
-* Menu:
+Initialize, set, test, unset and destroy simple and nested locks.
 
 * omp_init_lock::            Initialize simple lock
 * omp_set_lock::             Wait for and set simple lock
@@ -158,9 +156,7 @@ C linkage, and do not throw exceptions.
 * omp_unset_nest_lock::      Unset nested lock
 * omp_destroy_nest_lock::    Destroy nested lock
 
-   Portable, thread-based, wall clock timer.
-
-* Menu:
+Portable, thread-based, wall clock timer.
 
 * omp_get_wtick::            Get timer precision.
 * omp_get_wtime::            Elapsed wall clock time.
@@ -1274,9 +1270,36 @@ _Reference_:
      OpenMP specification v4.0 (http://www.openmp.org/), Section 4.2
 
 
+File: libgomp.info,  Node: OMP_PROC_BIND,  Next: OMP_PLACES,  Prev: OMP_NUM_THREADS,  Up: Environment Variables
+
+3.8 `OMP_PROC_BIND' - Whether theads may be moved between CPUs
+==============================================================
+
+_Description_:
+     Specifies whether threads may be moved between processors.  If set
+     to `TRUE', OpenMP theads should not be moved; if set to `FALSE'
+     they may be moved.  Alternatively, a comma separated list with the
+     values `MASTER', `CLOSE' and `SPREAD' can be used to specify the
+     thread affinity policy for the corresponding nesting level.  With
+     `MASTER' the worker threads are in the same place partition as the
+     master thread.  With `CLOSE' those are kept close to the master
+     thread in contiguous place partitions.  And with `SPREAD' a sparse
+     distribution across the place partitions is used.
+
+     When undefined, `OMP_PROC_BIND' defaults to `TRUE' when
+     `OMP_PLACES' or `GOMP_CPU_AFFINITY' is set and `FALSE' otherwise.
+
+_See also_:
+     *note OMP_PLACES::, *note GOMP_CPU_AFFINITY::, *note
+     omp_get_proc_bind::
+
+_Reference_:
+     OpenMP specification v4.0 (http://www.openmp.org/), Section 4.4
+
+
 File: libgomp.info,  Node: OMP_PLACES,  Next: OMP_STACKSIZE,  Prev: OMP_PROC_BIND,  Up: Environment Variables
 
-3.8 `OMP_PLACES' - Specifies on which CPUs the theads should be placed
+3.9 `OMP_PLACES' - Specifies on which CPUs the theads should be placed
 ======================================================================
 
 _Description_:
@@ -1316,36 +1339,28 @@ _Reference_:
      OpenMP specification v4.0 (http://www.openmp.org/), Section 4.5
 
 
-File: libgomp.info,  Node: OMP_PROC_BIND,  Next: OMP_PLACES,  Prev: OMP_NUM_THREADS,  Up: Environment Variables
+File: libgomp.info,  Node: OMP_STACKSIZE,  Next: OMP_SCHEDULE,  Prev: OMP_PLACES,  Up: Environment Variables
 
-3.9 `OMP_PROC_BIND' - Whether theads may be moved between CPUs
-==============================================================
+3.10 `OMP_STACKSIZE' - Set default thread stack size
+====================================================
 
 _Description_:
-     Specifies whether threads may be moved between processors.  If set
-     to `TRUE', OpenMP theads should not be moved; if set to `FALSE'
-     they may be moved.  Alternatively, a comma separated list with the
-     values `MASTER', `CLOSE' and `SPREAD' can be used to specify the
-     thread affinity policy for the corresponding nesting level.  With
-     `MASTER' the worker threads are in the same place partition as the
-     master thread.  With `CLOSE' those are kept close to the master
-     thread in contiguous place partitions.  And with `SPREAD' a sparse
-     distribution across the place partitions is used.
-
-     When undefined, `OMP_PROC_BIND' defaults to `TRUE' when
-     `OMP_PLACES' or `GOMP_CPU_AFFINITY' is set and `FALSE' otherwise.
-
-_See also_:
-     *note OMP_PLACES::, *note GOMP_CPU_AFFINITY::, *note
-     omp_get_proc_bind::
+     Set the default thread stack size in kilobytes, unless the number
+     is suffixed by `B', `K', `M' or `G', in which case the size is,
+     respectively, in bytes, kilobytes, megabytes or gigabytes.  This
+     is different from `pthread_attr_setstacksize' which gets the
+     number of bytes as an argument.  If the stack size cannot be set
+     due to system constraints, an error is reported and the initial
+     stack size is left unchanged.  If undefined, the stack size is
+     system dependent.
 
 _Reference_:
-     OpenMP specification v4.0 (http://www.openmp.org/), Section 4.4
+     OpenMP specification v4.0 (http://www.openmp.org/), Section 4.7
 
 
 File: libgomp.info,  Node: OMP_SCHEDULE,  Next: OMP_THREAD_LIMIT,  Prev: OMP_STACKSIZE,  Up: Environment Variables
 
-3.10 `OMP_SCHEDULE' - How threads are scheduled
+3.11 `OMP_SCHEDULE' - How threads are scheduled
 ===============================================
 
 _Description_:
@@ -1361,25 +1376,6 @@ _See also_:
 _Reference_:
      OpenMP specification v4.0 (http://www.openmp.org/), Sections 2.7.1
      and 4.1
-
-
-File: libgomp.info,  Node: OMP_STACKSIZE,  Next: OMP_SCHEDULE,  Prev: OMP_PLACES,  Up: Environment Variables
-
-3.11 `OMP_STACKSIZE' - Set default thread stack size
-====================================================
-
-_Description_:
-     Set the default thread stack size in kilobytes, unless the number
-     is suffixed by `B', `K', `M' or `G', in which case the size is,
-     respectively, in bytes, kilobytes, megabytes or gigabytes.  This
-     is different from `pthread_attr_setstacksize' which gets the
-     number of bytes as an argument.  If the stack size cannot be set
-     due to system constraints, an error is reported and the initial
-     stack size is left unchanged.  If undefined, the stack size is
-     system dependent.
-
-_Reference_:
-     OpenMP specification v4.0 (http://www.openmp.org/), Section 4.7
 
 
 File: libgomp.info,  Node: OMP_THREAD_LIMIT,  Next: OMP_WAIT_POLICY,  Prev: OMP_SCHEDULE,  Up: Environment Variables
@@ -3142,10 +3138,10 @@ Library Index
 * Environment Variable <3>:              GOMP_CPU_AFFINITY.     (line 6)
 * Environment Variable <4>:              OMP_WAIT_POLICY.       (line 6)
 * Environment Variable <5>:              OMP_THREAD_LIMIT.      (line 6)
-* Environment Variable <6>:              OMP_STACKSIZE.         (line 6)
-* Environment Variable <7>:              OMP_SCHEDULE.          (line 6)
-* Environment Variable <8>:              OMP_PROC_BIND.         (line 6)
-* Environment Variable <9>:              OMP_PLACES.            (line 6)
+* Environment Variable <6>:              OMP_SCHEDULE.          (line 6)
+* Environment Variable <7>:              OMP_STACKSIZE.         (line 6)
+* Environment Variable <8>:              OMP_PLACES.            (line 6)
+* Environment Variable <9>:              OMP_PROC_BIND.         (line 6)
 * Environment Variable <10>:             OMP_NUM_THREADS.       (line 6)
 * Environment Variable <11>:             OMP_NESTED.            (line 6)
 * Environment Variable <12>:             OMP_MAX_ACTIVE_LEVELS. (line 6)
@@ -3165,85 +3161,85 @@ Library Index
 
 
 Tag Table:
-Node: Top2116
-Node: Enabling OpenMP3310
-Node: Runtime Library Routines4097
-Node: omp_get_active_level7111
-Node: omp_get_ancestor_thread_num7809
-Node: omp_get_cancellation8736
-Node: omp_get_default_device9548
-Node: omp_get_dynamic10222
-Node: omp_get_level11095
-Node: omp_get_max_active_levels11713
-Node: omp_get_max_threads12410
-Node: omp_get_nested13165
-Node: omp_get_num_devices14075
-Node: omp_get_num_procs14594
-Node: omp_get_num_teams15131
-Node: omp_get_num_threads15645
-Node: omp_get_proc_bind16732
-Node: omp_get_schedule17650
-Node: omp_get_team_num18591
-Node: omp_get_team_size19088
-Node: omp_get_thread_limit20045
-Node: omp_get_thread_num20662
-Node: omp_in_parallel21531
-Node: omp_in_final22178
-Node: omp_is_initial_device22850
-Node: omp_set_default_device23541
-Node: omp_set_dynamic24329
-Node: omp_set_max_active_levels25212
-Node: omp_set_nested25986
-Node: omp_set_num_threads26875
-Node: omp_set_schedule27740
-Node: omp_init_lock28806
-Node: omp_set_lock29456
-Node: omp_test_lock30308
-Node: omp_unset_lock31281
-Node: omp_destroy_lock32209
-Node: omp_init_nest_lock32883
-Node: omp_set_nest_lock33615
-Node: omp_test_nest_lock34532
-Node: omp_unset_nest_lock35562
-Node: omp_destroy_nest_lock36574
-Node: omp_get_wtick37322
-Node: omp_get_wtime37912
-Node: Environment Variables38686
-Node: OMP_CANCELLATION40028
-Node: OMP_DISPLAY_ENV40561
-Node: OMP_DEFAULT_DEVICE41264
-Node: OMP_DYNAMIC42044
-Node: OMP_MAX_ACTIVE_LEVELS42640
-Node: OMP_NESTED43279
-Node: OMP_NUM_THREADS43884
-Node: OMP_PLACES44573
-Node: OMP_PROC_BIND46748
-Node: OMP_SCHEDULE47940
-Node: OMP_STACKSIZE48636
-Node: OMP_THREAD_LIMIT49460
-Node: OMP_WAIT_POLICY50060
-Node: GOMP_CPU_AFFINITY50752
-Node: GOMP_STACKSIZE52490
-Node: GOMP_SPINCOUNT53326
-Node: The libgomp ABI54503
-Node: Implementing MASTER construct55302
-Node: Implementing CRITICAL construct55716
-Node: Implementing ATOMIC construct56455
-Node: Implementing FLUSH construct56936
-Node: Implementing BARRIER construct57207
-Node: Implementing THREADPRIVATE construct57476
-Node: Implementing PRIVATE clause58128
-Node: Implementing FIRSTPRIVATE LASTPRIVATE COPYIN and COPYPRIVATE clauses58709
-Node: Implementing REDUCTION clause60033
-Node: Implementing PARALLEL construct60590
-Node: Implementing FOR construct61847
-Node: Implementing ORDERED construct63845
-Node: Implementing SECTIONS construct64151
-Node: Implementing SINGLE construct64917
-Node: Reporting Bugs65579
-Node: Copying65889
-Node: GNU Free Documentation License103454
-Node: Funding128596
-Node: Library Index131121
+Node: Top2114
+Node: Enabling OpenMP3308
+Node: Runtime Library Routines4095
+Node: omp_get_active_level7082
+Node: omp_get_ancestor_thread_num7780
+Node: omp_get_cancellation8707
+Node: omp_get_default_device9519
+Node: omp_get_dynamic10193
+Node: omp_get_level11066
+Node: omp_get_max_active_levels11684
+Node: omp_get_max_threads12381
+Node: omp_get_nested13136
+Node: omp_get_num_devices14046
+Node: omp_get_num_procs14565
+Node: omp_get_num_teams15102
+Node: omp_get_num_threads15616
+Node: omp_get_proc_bind16703
+Node: omp_get_schedule17621
+Node: omp_get_team_num18562
+Node: omp_get_team_size19059
+Node: omp_get_thread_limit20016
+Node: omp_get_thread_num20633
+Node: omp_in_parallel21502
+Node: omp_in_final22149
+Node: omp_is_initial_device22821
+Node: omp_set_default_device23512
+Node: omp_set_dynamic24300
+Node: omp_set_max_active_levels25183
+Node: omp_set_nested25957
+Node: omp_set_num_threads26846
+Node: omp_set_schedule27711
+Node: omp_init_lock28777
+Node: omp_set_lock29427
+Node: omp_test_lock30279
+Node: omp_unset_lock31252
+Node: omp_destroy_lock32180
+Node: omp_init_nest_lock32854
+Node: omp_set_nest_lock33586
+Node: omp_test_nest_lock34503
+Node: omp_unset_nest_lock35533
+Node: omp_destroy_nest_lock36545
+Node: omp_get_wtick37293
+Node: omp_get_wtime37883
+Node: Environment Variables38657
+Node: OMP_CANCELLATION39999
+Node: OMP_DISPLAY_ENV40532
+Node: OMP_DEFAULT_DEVICE41235
+Node: OMP_DYNAMIC42015
+Node: OMP_MAX_ACTIVE_LEVELS42611
+Node: OMP_NESTED43250
+Node: OMP_NUM_THREADS43855
+Node: OMP_PROC_BIND44544
+Node: OMP_PLACES45736
+Node: OMP_STACKSIZE47911
+Node: OMP_SCHEDULE48735
+Node: OMP_THREAD_LIMIT49431
+Node: OMP_WAIT_POLICY50031
+Node: GOMP_CPU_AFFINITY50723
+Node: GOMP_STACKSIZE52461
+Node: GOMP_SPINCOUNT53297
+Node: The libgomp ABI54474
+Node: Implementing MASTER construct55273
+Node: Implementing CRITICAL construct55687
+Node: Implementing ATOMIC construct56426
+Node: Implementing FLUSH construct56907
+Node: Implementing BARRIER construct57178
+Node: Implementing THREADPRIVATE construct57447
+Node: Implementing PRIVATE clause58099
+Node: Implementing FIRSTPRIVATE LASTPRIVATE COPYIN and COPYPRIVATE clauses58680
+Node: Implementing REDUCTION clause60004
+Node: Implementing PARALLEL construct60561
+Node: Implementing FOR construct61818
+Node: Implementing ORDERED construct63816
+Node: Implementing SECTIONS construct64122
+Node: Implementing SINGLE construct64888
+Node: Reporting Bugs65550
+Node: Copying65860
+Node: GNU Free Documentation License103425
+Node: Funding128567
+Node: Library Index131092
 
 End Tag Table
