@@ -1,5 +1,5 @@
 This is doc/gccinstall.info, produced by makeinfo version 4.13 from
-/mnt/jenkins/workspace/linaro-android_toolchain-4.9-2014.06/build/objdir/../build/../gcc/gcc-linaro-4.9-2014.06/gcc/doc/install.texi.
+/mnt/jenkins/workspace/linaro-android_toolchain-4.9-2014.07/build/objdir/../build/../gcc/gcc-linaro-4.9-2014.07/gcc/doc/install.texi.
 
 Copyright (C) 1988-2014 Free Software Foundation, Inc.
 
@@ -3105,9 +3105,9 @@ the system libunwind library will always be used.
 aarch64*-*-*
 ============
 
-Pre 2.24 binutils does not have support for selecting -mabi and does not
-support ILP32.  If GCC 4.9 or later is built with pre 2.24, GCC will not
-support option -mabi=ilp32.
+Binutils pre 2.24 does not have support for selecting `-mabi' and does
+not support ILP32.  If it is used to build GCC 4.9 or later, GCC will
+not support option `-mabi=ilp32'.
 
 *-ibm-aix*
 ==========
@@ -4646,63 +4646,63 @@ Ref: ix86-x-solaris210131411
 Ref: ia64-x-linux132602
 Ref: ia64-x-hpux133372
 Ref: aarch64-x-x133927
-Ref: x-ibm-aix134129
-Ref: iq2000-x-elf140992
-Ref: lm32-x-elf141132
-Ref: lm32-x-uclinux141236
-Ref: m32c-x-elf141364
-Ref: m32r-x-elf141466
-Ref: m68k-x-x141568
-Ref: m68k-x-uclinux142606
-Ref: mep-x-elf142852
-Ref: microblaze-x-elf142962
-Ref: mips-x-x143081
-Ref: mips-sgi-irix5145477
-Ref: mips-sgi-irix6145557
-Ref: moxie-x-elf145744
-Ref: msp430-x-elf145791
-Ref: nds32le-x-elf145894
-Ref: nds32be-x-elf145966
-Ref: powerpc-x-x146035
-Ref: powerpc-x-darwin146240
-Ref: powerpc-x-elf146734
-Ref: powerpc-x-linux-gnu146819
-Ref: powerpc-x-netbsd146914
-Ref: powerpc-x-eabisim147002
-Ref: powerpc-x-eabi147128
-Ref: powerpcle-x-elf147204
-Ref: powerpcle-x-eabisim147296
-Ref: powerpcle-x-eabi147429
-Ref: rl78-x-elf147512
-Ref: rx-x-elf147618
-Ref: s390-x-linux147817
-Ref: s390x-x-linux147889
-Ref: s390x-ibm-tpf147976
-Ref: x-x-solaris2148107
-Ref: sparc-x-x153027
-Ref: sparc-sun-solaris2153529
-Ref: sparc-sun-solaris210156283
-Ref: sparc-x-linux156659
-Ref: sparc64-x-solaris2156884
-Ref: sparcv9-x-solaris2157537
-Ref: c6x-x-x157624
-Ref: tilegx-*-linux157715
-Ref: tilegxbe-*-linux157857
-Ref: tilepro-*-linux158000
-Ref: x-x-vxworks158121
-Ref: x86-64-x-x159643
-Ref: x86-64-x-solaris210159971
-Ref: xtensa-x-elf160633
-Ref: xtensa-x-linux161304
-Ref: windows161645
-Ref: x-x-cygwin163582
-Ref: x-x-interix164135
-Ref: x-x-mingw32164444
-Ref: older164670
-Ref: elf166787
-Node: Old167045
-Node: Configurations170182
-Node: GNU Free Documentation License173723
-Node: Concept Index198870
+Ref: x-ibm-aix134130
+Ref: iq2000-x-elf140993
+Ref: lm32-x-elf141133
+Ref: lm32-x-uclinux141237
+Ref: m32c-x-elf141365
+Ref: m32r-x-elf141467
+Ref: m68k-x-x141569
+Ref: m68k-x-uclinux142607
+Ref: mep-x-elf142853
+Ref: microblaze-x-elf142963
+Ref: mips-x-x143082
+Ref: mips-sgi-irix5145478
+Ref: mips-sgi-irix6145558
+Ref: moxie-x-elf145745
+Ref: msp430-x-elf145792
+Ref: nds32le-x-elf145895
+Ref: nds32be-x-elf145967
+Ref: powerpc-x-x146036
+Ref: powerpc-x-darwin146241
+Ref: powerpc-x-elf146735
+Ref: powerpc-x-linux-gnu146820
+Ref: powerpc-x-netbsd146915
+Ref: powerpc-x-eabisim147003
+Ref: powerpc-x-eabi147129
+Ref: powerpcle-x-elf147205
+Ref: powerpcle-x-eabisim147297
+Ref: powerpcle-x-eabi147430
+Ref: rl78-x-elf147513
+Ref: rx-x-elf147619
+Ref: s390-x-linux147818
+Ref: s390x-x-linux147890
+Ref: s390x-ibm-tpf147977
+Ref: x-x-solaris2148108
+Ref: sparc-x-x153028
+Ref: sparc-sun-solaris2153530
+Ref: sparc-sun-solaris210156284
+Ref: sparc-x-linux156660
+Ref: sparc64-x-solaris2156885
+Ref: sparcv9-x-solaris2157538
+Ref: c6x-x-x157625
+Ref: tilegx-*-linux157716
+Ref: tilegxbe-*-linux157858
+Ref: tilepro-*-linux158001
+Ref: x-x-vxworks158122
+Ref: x86-64-x-x159644
+Ref: x86-64-x-solaris210159972
+Ref: xtensa-x-elf160634
+Ref: xtensa-x-linux161305
+Ref: windows161646
+Ref: x-x-cygwin163583
+Ref: x-x-interix164136
+Ref: x-x-mingw32164445
+Ref: older164671
+Ref: elf166788
+Node: Old167046
+Node: Configurations170183
+Node: GNU Free Documentation License173724
+Node: Concept Index198871
 
 End Tag Table
