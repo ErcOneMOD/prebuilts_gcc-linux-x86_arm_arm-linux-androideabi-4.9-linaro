@@ -5,7 +5,7 @@
 ;;; This file should be parsed by the same gengtype which wrote it.
 
 (!version  "4.9.2 20140811 (prerelease)")
-(!srcdir  "/mnt/bero/linaro-builds/toolchain-4.9/objdir/../build/../gcc/gcc-linaro-4.9-2014.08/gcc")
+(!srcdir  "/mnt/jenkins/workspace/linaro-android_toolchain-4.9-2014.08/build/objdir/../build/../gcc/gcc-linaro-4.9-2014.08/gcc")
 (!languages 9 ada c cp fortran go java lto objc objcp)
 (!fileslist 189
  (!srcfile 511  "../libcpp/include/line-map.h")
@@ -309,11 +309,11 @@
               (!srcfileloc  "tree-core.h" 729)
               nil )
              (!pair  "u"
-              (!type union 12 nil  gc_unused "anonymous:/mnt/bero/linaro-builds/toolchain-4.9/objdir/../build/../gcc/gcc-linaro-4.9-2014.08/gcc/tree-core.h:731"
+              (!type union 12 nil  gc_unused "anonymous:/mnt/jenkins/workspace/linaro-android_toolchain-4.9-2014.08/build/objdir/../build/../gcc/gcc-linaro-4.9-2014.08/gcc/tree-core.h:731"
                (!srcfileloc  "tree-core.h" 765)
                (!fields 3 
                 (!pair  "bits"
-                 (!type struct 13 nil  gc_unused "anonymous:/mnt/bero/linaro-builds/toolchain-4.9/objdir/../build/../gcc/gcc-linaro-4.9-2014.08/gcc/tree-core.h:734"
+                 (!type struct 13 nil  gc_unused "anonymous:/mnt/jenkins/workspace/linaro-android_toolchain-4.9-2014.08/build/objdir/../build/../gcc/gcc-linaro-4.9-2014.08/gcc/tree-core.h:734"
                   (!srcfileloc  "tree-core.h" 757)
                   (!fields 16 
                    (!pair  "lang_flag_0"
@@ -6611,7 +6611,7 @@
                                )
                               )
                               (!pair  "x"
-                               (!type struct 321 nil  gc_used "anonymous:/mnt/bero/linaro-builds/toolchain-4.9/objdir/../build/../gcc/gcc-linaro-4.9-2014.08/gcc/basic-block.h:187"
+                               (!type struct 321 nil  gc_used "anonymous:/mnt/jenkins/workspace/linaro-android_toolchain-4.9-2014.08/build/objdir/../build/../gcc/gcc-linaro-4.9-2014.08/gcc/basic-block.h:187"
                                 (!srcfileloc  "basic-block.h" 190)
                                 (!fields 2 
                                  (!pair  "head_"
@@ -8586,7 +8586,7 @@
                               (!srcfileloc  "dwarf2out.h" 55)
                               nil )
                              (!pair  "dw_cfi_oprnd1"
-                              (!type union 413 nil  gc_used "anonymous:/mnt/bero/linaro-builds/toolchain-4.9/objdir/../build/../gcc/gcc-linaro-4.9-2014.08/gcc/dwarf2out.h:47"
+                              (!type union 413 nil  gc_used "anonymous:/mnt/jenkins/workspace/linaro-android_toolchain-4.9-2014.08/build/objdir/../build/../gcc/gcc-linaro-4.9-2014.08/gcc/dwarf2out.h:47"
                                (!srcfileloc  "dwarf2out.h" 52)
                                (!fields 4 
                                 (!pair  "dw_cfi_reg_num"
@@ -10895,7 +10895,7 @@
                  )
                 )
                 (!pair  "loc"
-                 (!type union 512 nil  gc_unused "anonymous:/mnt/bero/linaro-builds/toolchain-4.9/objdir/../build/../gcc/gcc-linaro-4.9-2014.08/gcc/tree-core.h:1167"
+                 (!type union 512 nil  gc_unused "anonymous:/mnt/jenkins/workspace/linaro-android_toolchain-4.9-2014.08/build/objdir/../build/../gcc/gcc-linaro-4.9-2014.08/gcc/tree-core.h:1167"
                   (!srcfileloc  "tree-core.h" 1167)
                   (!fields 2 
                    (!pair  "stmt"
@@ -12711,7 +12711,7 @@
                        (!srcfileloc  "c/c-decl.c" 212)
                        (!fields 11 
                         (!pair  "u"
-                         (!type union 585 nil  gc_used "anonymous:/mnt/bero/linaro-builds/toolchain-4.9/objdir/../build/../gcc/gcc-linaro-4.9-2014.08/gcc/c/c-decl.c:198"
+                         (!type union 585 nil  gc_used "anonymous:/mnt/jenkins/workspace/linaro-android_toolchain-4.9-2014.08/build/objdir/../build/../gcc/gcc-linaro-4.9-2014.08/gcc/c/c-decl.c:198"
                           (!srcfileloc  "c/c-decl.c" 201)
                           (!fields 2 
                            (!pair  "type"
@@ -13730,7 +13730,7 @@
   (!fields 0 )
   nil 0 nil nil )
  
- (!type struct 644 nil  gc_unused "anonymous:/mnt/bero/linaro-builds/toolchain-4.9/objdir/../build/../gcc/gcc-linaro-4.9-2014.08/gcc/java/expr.c:2060"nil 
+ (!type struct 644 nil  gc_unused "anonymous:/mnt/jenkins/workspace/linaro-android_toolchain-4.9-2014.08/build/objdir/../build/../gcc/gcc-linaro-4.9-2014.08/gcc/java/expr.c:2060"nil 
   (!fields 0 )
   nil 0 nil nil )
  
@@ -13857,11 +13857,11 @@
   (!fields 0 )
   nil 0 nil nil )
  
- (!type struct 655 nil  gc_unused "anonymous:/mnt/bero/linaro-builds/toolchain-4.9/objdir/../build/../gcc/gcc-linaro-4.9-2014.08/gcc/fortran/trans.h:340"nil 
+ (!type struct 655 nil  gc_unused "anonymous:/mnt/jenkins/workspace/linaro-android_toolchain-4.9-2014.08/build/objdir/../build/../gcc/gcc-linaro-4.9-2014.08/gcc/fortran/trans.h:340"nil 
   (!fields 0 )
   nil 0 nil nil )
  
- (!type struct 656 nil  gc_unused "anonymous:/mnt/bero/linaro-builds/toolchain-4.9/objdir/../build/../gcc/gcc-linaro-4.9-2014.08/gcc/fortran/trans.h:328"nil 
+ (!type struct 656 nil  gc_unused "anonymous:/mnt/jenkins/workspace/linaro-android_toolchain-4.9-2014.08/build/objdir/../build/../gcc/gcc-linaro-4.9-2014.08/gcc/fortran/trans.h:328"nil 
   (!fields 0 )
   nil 0 nil nil )
  
@@ -13885,7 +13885,7 @@
   (!fields 0 )
   nil 0 nil nil )
  
- (!type struct 662 nil  gc_unused "anonymous:/mnt/bero/linaro-builds/toolchain-4.9/objdir/../build/../gcc/gcc-linaro-4.9-2014.08/gcc/fortran/trans.h:33"nil 
+ (!type struct 662 nil  gc_unused "anonymous:/mnt/jenkins/workspace/linaro-android_toolchain-4.9-2014.08/build/objdir/../build/../gcc/gcc-linaro-4.9-2014.08/gcc/fortran/trans.h:33"nil 
   (!fields 0 )
   nil 0 nil nil )
  
@@ -15136,7 +15136,7 @@
   (!fields 0 )
   nil 0 nil nil )
  
- (!type struct 759 nil  gc_unused "anonymous:/mnt/bero/linaro-builds/toolchain-4.9/objdir/../build/../gcc/gcc-linaro-4.9-2014.08/gcc/c/c-parser.c:6071"nil 
+ (!type struct 759 nil  gc_unused "anonymous:/mnt/jenkins/workspace/linaro-android_toolchain-4.9-2014.08/build/objdir/../build/../gcc/gcc-linaro-4.9-2014.08/gcc/c/c-parser.c:6071"nil 
   (!fields 0 )
   nil 0 nil nil )
  
@@ -15263,7 +15263,7 @@
   (!fields 0 )
   nil 0 nil nil )
  
- (!type struct 768 nil  gc_unused "anonymous:/mnt/bero/linaro-builds/toolchain-4.9/objdir/../build/../gcc/gcc-linaro-4.9-2014.08/gcc/c-family/c-pragma.c:1169"nil 
+ (!type struct 768 nil  gc_unused "anonymous:/mnt/jenkins/workspace/linaro-android_toolchain-4.9-2014.08/build/objdir/../build/../gcc/gcc-linaro-4.9-2014.08/gcc/c-family/c-pragma.c:1169"nil 
   (!fields 0 )
   nil 0 nil nil )
  
@@ -15795,7 +15795,7 @@
   (!fields 0 )
   nil 0 nil nil )
  
- (!type struct 828 nil  gc_unused "anonymous:/mnt/bero/linaro-builds/toolchain-4.9/objdir/../build/../gcc/gcc-linaro-4.9-2014.08/gcc/ada/gcc-interface/decl.c:178"nil 
+ (!type struct 828 nil  gc_unused "anonymous:/mnt/jenkins/workspace/linaro-android_toolchain-4.9-2014.08/build/objdir/../build/../gcc/gcc-linaro-4.9-2014.08/gcc/ada/gcc-interface/decl.c:178"nil 
   (!fields 0 )
   nil 0 nil nil )
  
@@ -17712,7 +17712,7 @@
   (!fields 0 )
   nil 0 nil nil )
  
- (!type struct 1013 nil  gc_unused "anonymous:/mnt/bero/linaro-builds/toolchain-4.9/objdir/../build/../gcc/gcc-linaro-4.9-2014.08/gcc/config/arm/arm.c:29820"nil 
+ (!type struct 1013 nil  gc_unused "anonymous:/mnt/jenkins/workspace/linaro-android_toolchain-4.9-2014.08/build/objdir/../build/../gcc/gcc-linaro-4.9-2014.08/gcc/config/arm/arm.c:29820"nil 
   (!fields 0 )
   nil 0 nil nil )
  
@@ -17720,7 +17720,7 @@
   (!fields 0 )
   nil 0 nil nil )
  
- (!type struct 1015 nil  gc_unused "anonymous:/mnt/bero/linaro-builds/toolchain-4.9/objdir/../build/../gcc/gcc-linaro-4.9-2014.08/gcc/config/arm/arm.c:23269"nil 
+ (!type struct 1015 nil  gc_unused "anonymous:/mnt/jenkins/workspace/linaro-android_toolchain-4.9-2014.08/build/objdir/../build/../gcc/gcc-linaro-4.9-2014.08/gcc/config/arm/arm.c:23269"nil 
   (!fields 0 )
   nil 0 nil nil )
  
@@ -17739,11 +17739,11 @@
  
  (!type already_seen 1017)
  
- (!type struct 1018 nil  gc_unused "anonymous:/mnt/bero/linaro-builds/toolchain-4.9/objdir/../build/../gcc/gcc-linaro-4.9-2014.08/gcc/config/arm/arm.c:3118"nil 
+ (!type struct 1018 nil  gc_unused "anonymous:/mnt/jenkins/workspace/linaro-android_toolchain-4.9-2014.08/build/objdir/../build/../gcc/gcc-linaro-4.9-2014.08/gcc/config/arm/arm.c:3118"nil 
   (!fields 0 )
   nil 0 nil nil )
  
- (!type struct 1019 nil  gc_unused "anonymous:/mnt/bero/linaro-builds/toolchain-4.9/objdir/../build/../gcc/gcc-linaro-4.9-2014.08/gcc/config/arm/arm.c:2124"nil 
+ (!type struct 1019 nil  gc_unused "anonymous:/mnt/jenkins/workspace/linaro-android_toolchain-4.9-2014.08/build/objdir/../build/../gcc/gcc-linaro-4.9-2014.08/gcc/config/arm/arm.c:2124"nil 
   (!fields 0 )
   nil 0 nil nil )
  
@@ -18077,7 +18077,7 @@
   (!fields 0 )
   nil 0 nil nil )
  
- (!type union 1085 nil  gc_unused "anonymous:/mnt/bero/linaro-builds/toolchain-4.9/objdir/../build/../gcc/gcc-linaro-4.9-2014.08/gcc/tree-eh.c:59"nil 
+ (!type union 1085 nil  gc_unused "anonymous:/mnt/jenkins/workspace/linaro-android_toolchain-4.9-2014.08/build/objdir/../build/../gcc/gcc-linaro-4.9-2014.08/gcc/tree-eh.c:59"nil 
   (!fields 0 )
   nil 0 nil )
  
@@ -18707,7 +18707,7 @@
     (!srcfileloc  "gimple.h" 277)
     nil )
    (!pair  "u"
-    (!type union 1126 nil  gc_used "anonymous:/mnt/bero/linaro-builds/toolchain-4.9/objdir/../build/../gcc/gcc-linaro-4.9-2014.08/gcc/gimple.h:280"
+    (!type union 1126 nil  gc_used "anonymous:/mnt/jenkins/workspace/linaro-android_toolchain-4.9-2014.08/build/objdir/../build/../gcc/gcc-linaro-4.9-2014.08/gcc/gimple.h:280"
      (!srcfileloc  "gimple.h" 283)
      (!fields 2 
       (!pair  "fntype"
@@ -18812,11 +18812,11 @@
   (!fields 0 )
   nil 0 nil nil )
  
- (!type struct 1134 nil  gc_unused "anonymous:/mnt/bero/linaro-builds/toolchain-4.9/objdir/../build/../gcc/gcc-linaro-4.9-2014.08/gcc/varasm.c:4818"nil 
+ (!type struct 1134 nil  gc_unused "anonymous:/mnt/jenkins/workspace/linaro-android_toolchain-4.9-2014.08/build/objdir/../build/../gcc/gcc-linaro-4.9-2014.08/gcc/varasm.c:4818"nil 
   (!fields 0 )
   nil 0 nil nil )
  
- (!type struct 1135 nil  gc_unused "anonymous:/mnt/bero/linaro-builds/toolchain-4.9/objdir/../build/../gcc/gcc-linaro-4.9-2014.08/gcc/varasm.c:4574"nil 
+ (!type struct 1135 nil  gc_unused "anonymous:/mnt/jenkins/workspace/linaro-android_toolchain-4.9-2014.08/build/objdir/../build/../gcc/gcc-linaro-4.9-2014.08/gcc/varasm.c:4574"nil 
   (!fields 0 )
   nil 0 nil nil )
  
@@ -18922,7 +18922,7 @@
   (!fields 0 )
   nil 0 nil nil )
  
- (!type union 1154 nil  gc_unused "anonymous:/mnt/bero/linaro-builds/toolchain-4.9/objdir/../build/../gcc/gcc-linaro-4.9-2014.08/gcc/mcf.c:344"nil 
+ (!type union 1154 nil  gc_unused "anonymous:/mnt/jenkins/workspace/linaro-android_toolchain-4.9-2014.08/build/objdir/../build/../gcc/gcc-linaro-4.9-2014.08/gcc/mcf.c:344"nil 
   (!fields 0 )
   nil 0 nil )
  
@@ -19838,7 +19838,7 @@
   (!fields 0 )
   nil 0 nil nil )
  
- (!type struct 1274 nil  gc_unused "anonymous:/mnt/bero/linaro-builds/toolchain-4.9/objdir/../build/../gcc/gcc-linaro-4.9-2014.08/gcc/dwarf2cfi.c:218"nil 
+ (!type struct 1274 nil  gc_unused "anonymous:/mnt/jenkins/workspace/linaro-android_toolchain-4.9-2014.08/build/objdir/../build/../gcc/gcc-linaro-4.9-2014.08/gcc/dwarf2cfi.c:218"nil 
   (!fields 0 )
   nil 0 nil nil )
  
@@ -19850,7 +19850,7 @@
   (!type pointer 1277 nil  gc_unused
    (!type already_seen 1276)
   )
-  gc_unused "anonymous:/mnt/bero/linaro-builds/toolchain-4.9/objdir/../build/../gcc/gcc-linaro-4.9-2014.08/gcc/dwarf2cfi.c:101"nil 
+  gc_unused "anonymous:/mnt/jenkins/workspace/linaro-android_toolchain-4.9-2014.08/build/objdir/../build/../gcc/gcc-linaro-4.9-2014.08/gcc/dwarf2cfi.c:101"nil 
   (!fields 0 )
   nil 0 nil nil )
  
@@ -21903,7 +21903,7 @@
  
  (!type already_seen 1324)
  
- (!type struct 1432 nil  gc_unused "anonymous:/mnt/bero/linaro-builds/toolchain-4.9/objdir/../build/../gcc/gcc-linaro-4.9-2014.08/gcc/config/arm/arm.h:1582"nil 
+ (!type struct 1432 nil  gc_unused "anonymous:/mnt/jenkins/workspace/linaro-android_toolchain-4.9-2014.08/build/objdir/../build/../gcc/gcc-linaro-4.9-2014.08/gcc/config/arm/arm.h:1582"nil 
   (!fields 0 )
   nil 0 nil nil )
  
@@ -21991,11 +21991,11 @@
   (!fields 0 )
   nil 0 nil nil )
  
- (!type struct 1448 nil  gc_unused "anonymous:/mnt/bero/linaro-builds/toolchain-4.9/objdir/../build/../gcc/gcc-linaro-4.9-2014.08/gcc/../libcpp/include/cpplib.h:999"nil 
+ (!type struct 1448 nil  gc_unused "anonymous:/mnt/jenkins/workspace/linaro-android_toolchain-4.9-2014.08/build/objdir/../build/../gcc/gcc-linaro-4.9-2014.08/gcc/../libcpp/include/cpplib.h:999"nil 
   (!fields 0 )
   nil 0 nil nil )
  
- (!type struct 1449 nil  gc_unused "anonymous:/mnt/bero/linaro-builds/toolchain-4.9/objdir/../build/../gcc/gcc-linaro-4.9-2014.08/gcc/../libcpp/include/cpplib.h:988"nil 
+ (!type struct 1449 nil  gc_unused "anonymous:/mnt/jenkins/workspace/linaro-android_toolchain-4.9-2014.08/build/objdir/../build/../gcc/gcc-linaro-4.9-2014.08/gcc/../libcpp/include/cpplib.h:988"nil 
   (!fields 0 )
   nil 0 nil nil )
  
@@ -22049,7 +22049,7 @@
   (!fields 0 )
   nil 0 nil nil )
  
- (!type struct 1458 nil  gc_unused "anonymous:/mnt/bero/linaro-builds/toolchain-4.9/objdir/../build/../gcc/gcc-linaro-4.9-2014.08/gcc/../libcpp/include/line-map.h:627"nil 
+ (!type struct 1458 nil  gc_unused "anonymous:/mnt/jenkins/workspace/linaro-android_toolchain-4.9-2014.08/build/objdir/../build/../gcc/gcc-linaro-4.9-2014.08/gcc/../libcpp/include/line-map.h:627"nil 
   (!fields 0 )
   nil 0 nil nil )
  
