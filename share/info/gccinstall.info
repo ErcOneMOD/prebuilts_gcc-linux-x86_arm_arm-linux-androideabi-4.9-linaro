@@ -1,5 +1,5 @@
 This is doc/gccinstall.info, produced by makeinfo version 4.13 from
-/mnt/jenkins/workspace/linaro-android_toolchain-4.9-2014.09/build/objdir/../build/../gcc/gcc-linaro-4.9-2014.09/gcc/doc/install.texi.
+/mnt/jenkins/workspace/linaro-android_toolchain-4.9-2014.10/build/objdir/../build/../gcc/gcc-linaro-4.9-2014.10/gcc/doc/install.texi.
 
 Copyright (C) 1988-2014 Free Software Foundation, Inc.
 
@@ -1229,6 +1229,10 @@ option.
      not be built.  This can be useful for debugging, or for
      compatibility with previous Ada build procedures, when it was
      required to explicitly do a `make -C gcc gnatlib_and_tools'.
+
+`--disable-libsanitizer'
+     Specify that the run-time libraries for the various sanitizers
+     should not be built.
 
 `--disable-libssp'
      Specify that the run-time libraries for stack smashing protection
@@ -3105,6 +3109,16 @@ Binutils pre 2.24 does not have support for selecting `-mabi' and does
 not support ILP32.  If it is used to build GCC 4.9 or later, GCC will
 not support option `-mabi=ilp32'.
 
+   To enable a workaround for the Cortex-A53 erratum number 835769 by
+default (for all CPUs regardless of -mcpu option given) at configure
+time use the `--enable-fix-cortex-a53-835769' option.  This will enable
+the fix by default and can be explicitly disabled during during
+compilation by passing the `-mno-fix-cortex-a53-835769' option.
+Conversely, `--disable-fix-cortex-a53-835769' will disable the
+workaround by default.  The workaround is disabled by default if
+neither of `--enable-fix-cortex-a53-835769' or
+`--disable-fix-cortex-a53-835769' is given at configure time.
+
 *-ibm-aix*
 ==========
 
@@ -4578,7 +4592,7 @@ Concept Index
 * Menu:
 
 * Binaries:                              Binaries.           (line    6)
-* build_configargs:                      Configuration.      (line 1519)
+* build_configargs:                      Configuration.      (line 1523)
 * Configuration:                         Configuration.      (line    6)
 * configurations supported by GCC:       Configurations.     (line    6)
 * Downloading GCC:                       Downloading the source.
@@ -4588,7 +4602,7 @@ Concept Index
 * FDL, GNU Free Documentation License:   GNU Free Documentation License.
                                                              (line    6)
 * Host specific installation:            Specific.           (line    6)
-* host_configargs:                       Configuration.      (line 1523)
+* host_configargs:                       Configuration.      (line 1527)
 * Installing GCC: Binaries:              Binaries.           (line    6)
 * Installing GCC: Building:              Building.           (line    6)
 * Installing GCC: Configuration:         Configuration.      (line    6)
@@ -4598,7 +4612,7 @@ Concept Index
 * Specific installation notes:           Specific.           (line    6)
 * Target specific installation:          Specific.           (line    6)
 * Target specific installation notes:    Specific.           (line    6)
-* target_configargs:                     Configuration.      (line 1527)
+* target_configargs:                     Configuration.      (line 1531)
 * Testing:                               Testing.            (line    6)
 * Testsuite:                             Testing.            (line    6)
 
@@ -4613,92 +4627,92 @@ Node: Configuration17239
 Ref: with-gnu-as32701
 Ref: with-as33599
 Ref: with-gnu-ld35012
-Node: Building84712
-Node: Testing100100
-Node: Final install107972
-Node: Binaries113286
-Node: Specific114754
-Ref: alpha-x-x115264
-Ref: alpha-dec-osf51115753
-Ref: amd64-x-solaris210116278
-Ref: arc-x-elf32116381
-Ref: arc-linux-uclibc116557
-Ref: arm-x-eabi116698
-Ref: avr116909
-Ref: bfin117549
-Ref: cr16117791
-Ref: cris118206
-Ref: dos119022
-Ref: epiphany-x-elf119345
-Ref: x-x-freebsd119450
-Ref: h8300-hms121287
-Ref: hppa-hp-hpux121639
-Ref: hppa-hp-hpux10124010
-Ref: hppa-hp-hpux11124423
-Ref: x-x-linux-gnu130082
-Ref: ix86-x-linux130275
-Ref: ix86-x-solaris29130588
-Ref: ix86-x-solaris210131367
-Ref: ia64-x-linux132558
-Ref: ia64-x-hpux133328
-Ref: aarch64-x-x133883
-Ref: x-ibm-aix134086
-Ref: iq2000-x-elf140949
-Ref: lm32-x-elf141089
-Ref: lm32-x-uclinux141193
-Ref: m32c-x-elf141321
-Ref: m32r-x-elf141423
-Ref: m68k-x-x141525
-Ref: m68k-x-uclinux142563
-Ref: mep-x-elf142809
-Ref: microblaze-x-elf142919
-Ref: mips-x-x143038
-Ref: mips-sgi-irix5145434
-Ref: mips-sgi-irix6145514
-Ref: moxie-x-elf145701
-Ref: msp430-x-elf145748
-Ref: nds32le-x-elf145851
-Ref: nds32be-x-elf145923
-Ref: powerpc-x-x145992
-Ref: powerpc-x-darwin146197
-Ref: powerpc-x-elf146691
-Ref: powerpc-x-linux-gnu146776
-Ref: powerpc-x-netbsd146871
-Ref: powerpc-x-eabisim146959
-Ref: powerpc-x-eabi147085
-Ref: powerpcle-x-elf147161
-Ref: powerpcle-x-eabisim147253
-Ref: powerpcle-x-eabi147386
-Ref: rl78-x-elf147469
-Ref: rx-x-elf147575
-Ref: s390-x-linux147774
-Ref: s390x-x-linux147846
-Ref: s390x-ibm-tpf147933
-Ref: x-x-solaris2148064
-Ref: sparc-x-x152984
-Ref: sparc-sun-solaris2153486
-Ref: sparc-sun-solaris210156240
-Ref: sparc-x-linux156616
-Ref: sparc64-x-solaris2156841
-Ref: sparcv9-x-solaris2157494
-Ref: c6x-x-x157581
-Ref: tilegx-*-linux157672
-Ref: tilegxbe-*-linux157814
-Ref: tilepro-*-linux157957
-Ref: x-x-vxworks158078
-Ref: x86-64-x-x159600
-Ref: x86-64-x-solaris210159928
-Ref: xtensa-x-elf160590
-Ref: xtensa-x-linux161261
-Ref: windows161602
-Ref: x-x-cygwin163539
-Ref: x-x-interix164092
-Ref: x-x-mingw32164401
-Ref: older164627
-Ref: elf166744
-Node: Old167002
-Node: Configurations170139
-Node: GNU Free Documentation License173680
-Node: Concept Index198827
+Node: Building84832
+Node: Testing100220
+Node: Final install108092
+Node: Binaries113406
+Node: Specific114874
+Ref: alpha-x-x115384
+Ref: alpha-dec-osf51115873
+Ref: amd64-x-solaris210116398
+Ref: arc-x-elf32116501
+Ref: arc-linux-uclibc116677
+Ref: arm-x-eabi116818
+Ref: avr117029
+Ref: bfin117669
+Ref: cr16117911
+Ref: cris118326
+Ref: dos119142
+Ref: epiphany-x-elf119465
+Ref: x-x-freebsd119570
+Ref: h8300-hms121407
+Ref: hppa-hp-hpux121759
+Ref: hppa-hp-hpux10124130
+Ref: hppa-hp-hpux11124543
+Ref: x-x-linux-gnu130202
+Ref: ix86-x-linux130395
+Ref: ix86-x-solaris29130708
+Ref: ix86-x-solaris210131487
+Ref: ia64-x-linux132678
+Ref: ia64-x-hpux133448
+Ref: aarch64-x-x134003
+Ref: x-ibm-aix134783
+Ref: iq2000-x-elf141646
+Ref: lm32-x-elf141786
+Ref: lm32-x-uclinux141890
+Ref: m32c-x-elf142018
+Ref: m32r-x-elf142120
+Ref: m68k-x-x142222
+Ref: m68k-x-uclinux143260
+Ref: mep-x-elf143506
+Ref: microblaze-x-elf143616
+Ref: mips-x-x143735
+Ref: mips-sgi-irix5146131
+Ref: mips-sgi-irix6146211
+Ref: moxie-x-elf146398
+Ref: msp430-x-elf146445
+Ref: nds32le-x-elf146548
+Ref: nds32be-x-elf146620
+Ref: powerpc-x-x146689
+Ref: powerpc-x-darwin146894
+Ref: powerpc-x-elf147388
+Ref: powerpc-x-linux-gnu147473
+Ref: powerpc-x-netbsd147568
+Ref: powerpc-x-eabisim147656
+Ref: powerpc-x-eabi147782
+Ref: powerpcle-x-elf147858
+Ref: powerpcle-x-eabisim147950
+Ref: powerpcle-x-eabi148083
+Ref: rl78-x-elf148166
+Ref: rx-x-elf148272
+Ref: s390-x-linux148471
+Ref: s390x-x-linux148543
+Ref: s390x-ibm-tpf148630
+Ref: x-x-solaris2148761
+Ref: sparc-x-x153681
+Ref: sparc-sun-solaris2154183
+Ref: sparc-sun-solaris210156937
+Ref: sparc-x-linux157313
+Ref: sparc64-x-solaris2157538
+Ref: sparcv9-x-solaris2158191
+Ref: c6x-x-x158278
+Ref: tilegx-*-linux158369
+Ref: tilegxbe-*-linux158511
+Ref: tilepro-*-linux158654
+Ref: x-x-vxworks158775
+Ref: x86-64-x-x160297
+Ref: x86-64-x-solaris210160625
+Ref: xtensa-x-elf161287
+Ref: xtensa-x-linux161958
+Ref: windows162299
+Ref: x-x-cygwin164236
+Ref: x-x-interix164789
+Ref: x-x-mingw32165098
+Ref: older165324
+Ref: elf167441
+Node: Old167699
+Node: Configurations170836
+Node: GNU Free Documentation License174377
+Node: Concept Index199524
 
 End Tag Table
