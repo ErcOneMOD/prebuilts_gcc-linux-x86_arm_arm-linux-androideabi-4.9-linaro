@@ -1,5 +1,5 @@
 This is libgomp.info, produced by makeinfo version 4.13 from
-/mnt/jenkins/workspace/linaro-android_toolchain-4.9-2014.10/build/objdir/../build/../gcc/gcc-linaro-4.9-2014.10/libgomp/libgomp.texi.
+/mnt/jenkins/workspace/linaro-android_toolchain-4.9-2014.10/build/objdir/../build/../gcc/gcc-linaro-4.9-2014.10-1/libgomp/libgomp.texi.
 
 Copyright (C) 2006-2014 Free Software Foundation, Inc.
 
@@ -3161,85 +3161,85 @@ Library Index
 
 
 Tag Table:
-Node: Top2114
-Node: Enabling OpenMP3308
-Node: Runtime Library Routines4095
-Node: omp_get_active_level7082
-Node: omp_get_ancestor_thread_num7780
-Node: omp_get_cancellation8707
-Node: omp_get_default_device9519
-Node: omp_get_dynamic10193
-Node: omp_get_level11066
-Node: omp_get_max_active_levels11684
-Node: omp_get_max_threads12381
-Node: omp_get_nested13136
-Node: omp_get_num_devices14046
-Node: omp_get_num_procs14565
-Node: omp_get_num_teams15102
-Node: omp_get_num_threads15616
-Node: omp_get_proc_bind16703
-Node: omp_get_schedule17621
-Node: omp_get_team_num18562
-Node: omp_get_team_size19059
-Node: omp_get_thread_limit20016
-Node: omp_get_thread_num20633
-Node: omp_in_parallel21502
-Node: omp_in_final22149
-Node: omp_is_initial_device22821
-Node: omp_set_default_device23512
-Node: omp_set_dynamic24300
-Node: omp_set_max_active_levels25183
-Node: omp_set_nested25957
-Node: omp_set_num_threads26846
-Node: omp_set_schedule27711
-Node: omp_init_lock28777
-Node: omp_set_lock29427
-Node: omp_test_lock30279
-Node: omp_unset_lock31252
-Node: omp_destroy_lock32180
-Node: omp_init_nest_lock32854
-Node: omp_set_nest_lock33586
-Node: omp_test_nest_lock34503
-Node: omp_unset_nest_lock35533
-Node: omp_destroy_nest_lock36545
-Node: omp_get_wtick37293
-Node: omp_get_wtime37883
-Node: Environment Variables38657
-Node: OMP_CANCELLATION39999
-Node: OMP_DISPLAY_ENV40532
-Node: OMP_DEFAULT_DEVICE41235
-Node: OMP_DYNAMIC42015
-Node: OMP_MAX_ACTIVE_LEVELS42611
-Node: OMP_NESTED43250
-Node: OMP_NUM_THREADS43855
-Node: OMP_PROC_BIND44544
-Node: OMP_PLACES45736
-Node: OMP_STACKSIZE47911
-Node: OMP_SCHEDULE48735
-Node: OMP_THREAD_LIMIT49431
-Node: OMP_WAIT_POLICY50031
-Node: GOMP_CPU_AFFINITY50723
-Node: GOMP_STACKSIZE52461
-Node: GOMP_SPINCOUNT53297
-Node: The libgomp ABI54474
-Node: Implementing MASTER construct55273
-Node: Implementing CRITICAL construct55687
-Node: Implementing ATOMIC construct56426
-Node: Implementing FLUSH construct56907
-Node: Implementing BARRIER construct57178
-Node: Implementing THREADPRIVATE construct57447
-Node: Implementing PRIVATE clause58099
-Node: Implementing FIRSTPRIVATE LASTPRIVATE COPYIN and COPYPRIVATE clauses58680
-Node: Implementing REDUCTION clause60004
-Node: Implementing PARALLEL construct60561
-Node: Implementing FOR construct61818
-Node: Implementing ORDERED construct63816
-Node: Implementing SECTIONS construct64122
-Node: Implementing SINGLE construct64888
-Node: Reporting Bugs65550
-Node: Copying65860
-Node: GNU Free Documentation License103425
-Node: Funding128567
-Node: Library Index131092
+Node: Top2116
+Node: Enabling OpenMP3310
+Node: Runtime Library Routines4097
+Node: omp_get_active_level7084
+Node: omp_get_ancestor_thread_num7782
+Node: omp_get_cancellation8709
+Node: omp_get_default_device9521
+Node: omp_get_dynamic10195
+Node: omp_get_level11068
+Node: omp_get_max_active_levels11686
+Node: omp_get_max_threads12383
+Node: omp_get_nested13138
+Node: omp_get_num_devices14048
+Node: omp_get_num_procs14567
+Node: omp_get_num_teams15104
+Node: omp_get_num_threads15618
+Node: omp_get_proc_bind16705
+Node: omp_get_schedule17623
+Node: omp_get_team_num18564
+Node: omp_get_team_size19061
+Node: omp_get_thread_limit20018
+Node: omp_get_thread_num20635
+Node: omp_in_parallel21504
+Node: omp_in_final22151
+Node: omp_is_initial_device22823
+Node: omp_set_default_device23514
+Node: omp_set_dynamic24302
+Node: omp_set_max_active_levels25185
+Node: omp_set_nested25959
+Node: omp_set_num_threads26848
+Node: omp_set_schedule27713
+Node: omp_init_lock28779
+Node: omp_set_lock29429
+Node: omp_test_lock30281
+Node: omp_unset_lock31254
+Node: omp_destroy_lock32182
+Node: omp_init_nest_lock32856
+Node: omp_set_nest_lock33588
+Node: omp_test_nest_lock34505
+Node: omp_unset_nest_lock35535
+Node: omp_destroy_nest_lock36547
+Node: omp_get_wtick37295
+Node: omp_get_wtime37885
+Node: Environment Variables38659
+Node: OMP_CANCELLATION40001
+Node: OMP_DISPLAY_ENV40534
+Node: OMP_DEFAULT_DEVICE41237
+Node: OMP_DYNAMIC42017
+Node: OMP_MAX_ACTIVE_LEVELS42613
+Node: OMP_NESTED43252
+Node: OMP_NUM_THREADS43857
+Node: OMP_PROC_BIND44546
+Node: OMP_PLACES45738
+Node: OMP_STACKSIZE47913
+Node: OMP_SCHEDULE48737
+Node: OMP_THREAD_LIMIT49433
+Node: OMP_WAIT_POLICY50033
+Node: GOMP_CPU_AFFINITY50725
+Node: GOMP_STACKSIZE52463
+Node: GOMP_SPINCOUNT53299
+Node: The libgomp ABI54476
+Node: Implementing MASTER construct55275
+Node: Implementing CRITICAL construct55689
+Node: Implementing ATOMIC construct56428
+Node: Implementing FLUSH construct56909
+Node: Implementing BARRIER construct57180
+Node: Implementing THREADPRIVATE construct57449
+Node: Implementing PRIVATE clause58101
+Node: Implementing FIRSTPRIVATE LASTPRIVATE COPYIN and COPYPRIVATE clauses58682
+Node: Implementing REDUCTION clause60006
+Node: Implementing PARALLEL construct60563
+Node: Implementing FOR construct61820
+Node: Implementing ORDERED construct63818
+Node: Implementing SECTIONS construct64124
+Node: Implementing SINGLE construct64890
+Node: Reporting Bugs65552
+Node: Copying65862
+Node: GNU Free Documentation License103427
+Node: Funding128569
+Node: Library Index131094
 
 End Tag Table
